@@ -611,6 +611,10 @@ textarea {
 	cursor: pointer;
 }
 
+.delet-file:hover {
+	background-color: rgba(252, 3, 3, 0.3);
+}
+
 .info-load span:nth-child(2) {
 	margin-left: 4px;
 }
@@ -658,6 +662,10 @@ strong.title {
 	height: 14px;
 	margin-right: 9px;
 	background: url(../img/ic-plus.svg) no-repeat center;
+}
+
+.add-photo .info-load {
+	margin-bottom: 10px;
 }
 
 .item.width.mt {
