@@ -499,6 +499,10 @@ h2.info:after {
 	margin-top: auto;
 }
 
+.form-footer .center {
+	margin-bottom: 0;
+}
+
 .form-style input[type="submit"] {
 	max-width: 348px;
 	width: 100%;
