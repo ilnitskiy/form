@@ -1,3 +1,18 @@
+/*  MENU
+------------------------------------------------- */
+function menu() {
+    let btn = document.querySelector('.btn-menu');
+    let menu = document.querySelector('.menu');
+
+    btn.onclick = function(e) {
+        e.preventDefault();
+        menu.classList.toggle('active');
+    };
+}
+
+new menu();
+
+
 /*  SELECT
 ----------------------------------------------  */
 function selects() {
