@@ -506,6 +506,7 @@ h2.info:after {
 	font-family: 'Proxima Nova Lt';
 	cursor: pointer;
 	border-radius: 5px;
+	margin-left: 10px;
 }
 
 input[type="submit"].bg-active:hover {
@@ -524,6 +525,7 @@ input[type="submit"].bg-active:hover {
 	cursor: pointer;
 	background: #e6e8e9;
 	border-radius: 5px;
+	margin-right: 10px;
 }
 
 .form-style .btn-back:hover {
@@ -717,6 +719,8 @@ strong.title {
 
     .form-style input[type="submit"] {
     	width: 100%;
+    	max-width: 100%;
+    	margin-left: 0;
     }
 
     .form-footer {
@@ -729,7 +733,9 @@ strong.title {
 
     .form-style .btn-back {
     	width: 100%;
+    	max-width: 100%;
     	margin-bottom: 16px;
+    	margin-right: 0;
     }
 
 }
