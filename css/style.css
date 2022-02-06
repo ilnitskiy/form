@@ -108,8 +108,7 @@ h2 {
 	font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    /*color: #999999;*/
-    color: #000;
+    color: #999999;
 }
 .select-btn:hover {background: #FCFCFC;}
 
@@ -119,6 +118,7 @@ h2 {
 	height: 7px;
 	background: url(../img/ic-down.svg) no-repeat;
 	background-size: contain;
+	filter: invert(70%) sepia(4%) saturate(20%) hue-rotate(333deg) brightness(86%) contrast(92%);
 }
 
 .select-btn.active:after {
@@ -142,10 +142,9 @@ h2 {
   	border-width: 0px 1px 1px 1px;
 	cursor: pointer;
 	font-family: 'Proxima Nova Lt', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
-    /*color: #999999;*/
-    color: #000;
+    color: #999999;
 }
 .select .select-item:hover {background: #FCFCFC;}
 
@@ -177,6 +176,14 @@ h2 {
 .id-agent strong {
 	display: block;
 	font-weight: 600;
+}
+
+.burger {
+	display: none;
+	width: 24px;
+	height: 24px;
+	background: url(../img/ic-burger.svg) no-repeat center;
+	margin-right: 16px;
 }
 
 .header .link {margin-right: 72px;}
@@ -230,32 +237,28 @@ h2 {
     font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    /*color: #999999;*/
-    color: #000;
+    color: #999999;
 }
 .form-style input::-webkit-input-placeholder,
 .form-style textarea::-webkit-input-placeholder {
     font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    /*color: #999999;*/
-    color: #000;
+    color: #999999;
 }
 .form-style input:-moz-placeholder,
 .form-style textarea:-moz-placeholder {
     font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    /*color: #999999;*/
-    color: #000;
+    color: #999999;
 }
 .form-style input:-ms-input-placeholder,
 .form-style textarea:-ms-input-placeholder {
     font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    /*color: #999999;*/
-    color: #000;
+    color: #999999;
 }
 
 .form-style input[type="checkbox"] {
@@ -472,7 +475,8 @@ h2.info:after {
 	cursor: pointer;
 	border-radius: 5px;
 }
-.form-style input[type="submit"]:hover {
+
+input[type="submit"].bg-active:hover {
 	opacity: 0.8;
 }
 
@@ -632,7 +636,83 @@ strong.title {
 /* ---------------------------------------------- */
 /*               MEDIA QUERI                      */
 /* ---------------------------------------------- */
+@media screen and (max-width: 768px) {
+	.header .link a {
+		display: none;
+	}
+}
 
-@media screen and (max-width: 0px) {
-    
+
+@media screen and (max-width: 600px) {
+	body {
+		background: #fff;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.hidden-mobile {
+		display: none!important;
+	}
+
+	.center {
+		width: 100%;
+		padding: 0;
+	}
+
+	.form-style .center {margin-bottom: 10px;}
+
+    .form-style .item {
+    	width: 100%;
+    }
+
+    .form-style .item:nth-last-child(2) {
+    	margin-bottom: 28px;
+    }
+
+    .form-style .container {
+    	padding-left: 16px;
+    	padding-right: 16px;
+    	box-shadow: none;
+    	padding-top: 0;
+    }
+
+    .form-style .main-container {
+    	margin-top: 0;
+    }
+
+    .form-style input[type="submit"] {
+    	width: 100%;
+    }
+
+    .form-footer {
+    	padding: 16px;
+    }
+
+    .form-footer .flex {
+    	flex-direction: column;
+    }
+
+    .form-style .btn-back {
+    	width: 100%;
+    	margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+	.boxed {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.main-load {
+		width: 100%;
+		margin-top: 16px;
+	}
+
+	.name-value br {
+		display: none;
+	}
 }
