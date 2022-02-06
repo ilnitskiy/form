@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="header">
+	<div class="left">
+		<div class="id-agent">
+			<span>ID-Агента:</span>
+			<strong>23455676</strong>
+		</div>
+
+		<div class="link">
+			<a href="#">Связаться с оператором</a>
+			<a href="#">Сформировать QR-код агента</a>
+		</div>
+	</div>
+
+	<a href="#" class="logout">Выйти</a>
+</header>
+<!-- // HEADER -->
+
+<!-- FORM-->
+<form action="#" class="form form-style">
+	<div class="center">
+		<div class="container">
+			<h2 class="info">Данные по авто</h2>
+
+			<div class="wrap">
+				<div class="item">
+					<span>Марка</span>
+
+					<div class="select">
+					    <div class="select-btn">Выберите марку</div>
+					
+					    <ul class="select-wrap">
+					        <li class="select-item" data-value="eng">bmw</li>
+					        <li class="select-item" data-value="cz">audio</li>
+					        <li class="select-item" data-value="ru">mercedes</li>
+					    </ul>
+					
+					    <input type="hidden">
+					</div>
+				</div>
+
+				<div class="item">
+					<span>Модель</span>
+
+					<div class="select">
+					    <div class="select-btn">Выберите марку</div>
+					
+					    <ul class="select-wrap">
+					        <li class="select-item" data-value="eng">mb-600</li>
+					        <li class="select-item" data-value="cz">A6</li>
+					        <li class="select-item" data-value="ru">300</li>
+					    </ul>
+					
+					    <input type="hidden">
+					</div>
+				</div>
+
+				<div class="item">
+					<span>Год выуска</span>
+					
+					<div class="select">
+					    <div class="select-btn">2021</div>
+					
+					    <ul class="select-wrap">
+					        <li class="select-item" data-value="eng">2019</li>
+					        <li class="select-item" data-value="cz">2018</li>
+					        <li class="select-item" data-value="ru">2017</li>
+					    </ul>
+					
+					    <input type="hidden">
+					</div>
+				</div>
+
+				<div class="item">
+					<span>Госномер</span>
+					<input type="text" name="name" placeholder="Введите госномер">
+				</div>
+
+				<div class="item">
+					<span>VIN/номер шасси</span>
+					<input type="text" name="name" placeholder="Введите VIN/номер шасси">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-footer">
+		<div class="flex">
+			<button class="btn-back">К предыдущему шагу</button>
+			<input class="bg-active" type="submit" name="" value="Далее">
+		</div>
+	</div>
+</form>
+<!-- // FORM-->
+
+	
+<script src="js/main.js"></script>
+
+</body>
+</html>
