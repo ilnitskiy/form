@@ -47,8 +47,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}   
-font-family: 'Proxima Nova Lt';
+} 
+
+body.active {
+	overflow: hidden;
+}
 
 img {
     max-width: 100%;

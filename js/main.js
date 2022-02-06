@@ -3,10 +3,12 @@
 function menu() {
     let btn = document.querySelector('.burger');
     let menu = document.querySelector('.menu');
+    let body = document.querySelector('body');
 
     btn.onclick = function(e) {
         e.preventDefault();
         menu.classList.toggle('active');
+        body.classList.toggle('active');
     };
 }
 
