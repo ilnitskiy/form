@@ -25,6 +25,8 @@ function selects() {
         let input = select[i].querySelector('input[type="hidden"]');
 
         selectBtn.onclick = function() {
+            let parent = this.closest('.select')
+
             this.classList.toggle('active');
             ul.classList.toggle('active');
 
@@ -36,6 +38,8 @@ function selects() {
                   ul.classList.remove('active');
                   
                   input.setAttribute('value', this.getAttribute('data-value'));
+
+                  parent.classList.add('open');
                 }
             }
         }

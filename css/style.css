@@ -112,6 +112,10 @@ h2 {
 }
 .select-btn:hover {background: #FCFCFC;}
 
+.select.open .select-btn {
+	color: #000;
+}
+
 .select-btn:after {
 	content: '';
 	width: 12px;
@@ -123,6 +127,10 @@ h2 {
 
 .select-btn.active:after {
 	transform: rotate(180deg);
+}
+
+.select.open .select-btn:after {
+	filter: inherit;
 }
 
 .select .select-wrap {
