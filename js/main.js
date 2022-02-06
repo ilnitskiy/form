@@ -1,7 +1,7 @@
 /*  MENU
 ------------------------------------------------- */
 function menu() {
-    let btn = document.querySelector('.btn-menu');
+    let btn = document.querySelector('.burger');
     let menu = document.querySelector('.menu');
 
     btn.onclick = function(e) {
