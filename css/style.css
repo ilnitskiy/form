@@ -527,7 +527,7 @@ h2.info:after {
 	font-family: 'Proxima Nova Lt';
 	cursor: pointer;
 	border-radius: 5px;
-	margin-left: 10px;
+	margin-left: 12px;
 }
 
 input[type="submit"].bg-active:hover {
@@ -546,7 +546,7 @@ input[type="submit"].bg-active:hover {
 	cursor: pointer;
 	background: #e6e8e9;
 	border-radius: 5px;
-	margin-right: 10px;
+	margin-right: 12px;
 }
 
 .form-style .btn-back:hover {
