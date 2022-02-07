@@ -147,15 +147,15 @@ h2 {
 .select .select-wrap.active {display: block;}
 
 .select .select-item {
-	padding: 12px;
+	padding: 7px 10px;
     border-color: #cbcbcb;
   	border-style: solid;
   	border-width: 0px 1px 1px 1px;
 	cursor: pointer;
 	font-family: 'Proxima Nova Lt', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
 }
 .select .select-item:hover {background: #FCFCFC;}
 
