@@ -125,7 +125,7 @@ h2 {
 	height: 7px;
 	background: url(../img/ic-down.svg) no-repeat;
 	background-size: contain;
-	filter: invert(70%) sepia(4%) saturate(20%) hue-rotate(333deg) brightness(86%) contrast(92%);
+	opacity: 0.4;
 }
 
 /*.select-btn.active:after {
@@ -133,7 +133,7 @@ h2 {
 }*/
 
 .select.open .select-btn:after {
-	filter: inherit;
+	opacity: 1;
 }
 
 .select .select-wrap {
