@@ -128,9 +128,9 @@ h2 {
 	filter: invert(70%) sepia(4%) saturate(20%) hue-rotate(333deg) brightness(86%) contrast(92%);
 }
 
-.select-btn.active:after {
+/*.select-btn.active:after {
 	transform: rotate(180deg);
-}
+}*/
 
 .select.open .select-btn:after {
 	filter: inherit;
@@ -266,6 +266,20 @@ h2 {
 	color: #000;
 	font-family: 'Proxima Nova Lt', sans-serif;
 	resize: none;
+}
+
+.form-style input[type="date"] {
+	color: #999999;
+	background: transparent;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0.4;
+    background: url(../img/ic-down.svg) no-repeat center;
+}
+
+input[type="date"].active::-webkit-calendar-picker-indicator {
+	opacity: 1;
 }
 
 .form-style input::-moz-placeholder,

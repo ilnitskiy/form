@@ -76,3 +76,16 @@ function fieldFile() {
 }
 
 fieldFile();
+
+
+function dateCheck() {
+    let inputDate = document.querySelectorAll('input[type="date"]');
+
+    for (let i = 0; i < inputDate.length; i++) {
+        inputDate[i].onchange = function() {
+            this.style.color = '#000';
+            this.classList.add('active');
+        }
+    }
+}
+dateCheck();
